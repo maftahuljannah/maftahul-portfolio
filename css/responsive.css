@@ -1,0 +1,273 @@
+@media (min-width: 320px) and (max-width: 350px) {
+    header {
+        border-radius: 25px;
+    }
+    header nav a img {
+        width: 70px;
+    }
+
+    header nav h2 {
+        font-size: 11px;
+    }
+
+    header nav p {
+        font-size: 8px;
+        letter-spacing: 3px;
+    }
+
+    #banner {
+        height: 1300px;
+    }
+
+    #banner .bannerLeft {
+        margin-top: 130px;
+    }
+
+    .bannerLeft h5 {
+        margin-bottom: 20px;
+        font-size: 12px;
+        padding: 8px 14px;
+    }
+
+    .bannerLeft h1 {
+        font-size: 44px;
+        margin-bottom: 10px;
+    }
+
+    .bannerLeft h6 {
+        font-size: 14px;
+    }
+
+    .bannerLeft p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .bannerLeft .bannerBtn {
+        display: block;
+    }
+
+    .bannerLeft .btn_primary {
+        margin-bottom: 16px;
+    }
+
+    .bannerLeft .amolnama h3 {
+        font-size: 24px;
+    }
+
+    .bannerLeft .amolnama {
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .bannerLeft .amolnama p {
+        font-size: 14px;
+    }
+
+    .bannerRight{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .bannerRight .code {
+        top: 80px;
+        left: 20px;
+        width: 140px;
+    }
+
+    .bannerRight .manWrapper {
+        position: relative;
+        left: 49%;
+        transform: translateX(-60%);
+        width: 260px;
+        top: 120px;
+    }
+
+    .bannerRight .loadingPg{
+        position: relative;
+        top: 58px;
+        right: -67px;
+        width: 180px;
+        height: 110px;
+        border-radius: 10px;
+    }
+
+    .bannerRight .loadingPg .div1{
+        width: 70px;
+        height: 8px;
+    }
+
+    .bannerRight .loadingPg .div2{
+        width: 160px;
+        height: 8px;
+    }
+
+    .bannerRight .loadingPg .div3{
+        width: 100px;
+        height: 8px;
+    }
+
+    #about {
+        height: 1100px;
+    }
+
+    .aboutLeft h1 {
+        font-size: 39px;
+    }
+
+    .aboutLeft p {
+        font-size: 12px;
+    }
+
+    .aboutRight {
+        margin-top: 100px;
+    }
+
+    .aboutRight .toppings .topppu {
+        border-radius: 20px;
+        padding: 20px;
+        width: 150px;
+    }
+
+    .aboutRight .toppings .topppu iconify-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .aboutRight .toppings .topppu h3 {
+        font-size: 20px;
+    }
+
+    
+    .aboutRight .toppings .topppu p {
+        font-size: 12px;
+    }
+
+    #expertise .heading h5 {
+        font-size: 10px;
+    }
+
+    #expertise .heading h1 {
+        font-size: 36px;
+    }
+
+    #expertise .heading p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 351px) and (max-width: 390px) {
+    .mblHdr .navLeft .navIcon h3 {
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+
+    .mblHdr .navLeft .navIcon p {
+        font-size: 7px;
+        letter-spacing: 4px;
+    }
+
+    #banner {
+        height: 1300px;
+    }
+
+    #banner .bannerLeft {
+        margin-top: 120px;
+    }
+    
+    .bannerLeft h5 {
+        font-size: 13px;
+        margin-bottom: 20px;
+        padding: 10px 12px;
+    }
+
+    .bannerLeft h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    .bannerLeft h6 {
+        font-size: 16px;
+    }
+
+    .bannerLeft p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .bannerLeft .bannerBtn {
+        display: block;
+    }
+
+    .bannerLeft .btn_primary {
+        margin-bottom: 16px;
+    }
+
+    .bannerLeft .amolnama h3 {
+        font-size: 24px;
+    }
+
+    .bannerLeft .amolnama {
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .bannerLeft .amolnama p {
+        font-size: 14px;
+    }
+
+    .bannerRight{
+        flex-direction: column;
+        height: auto;
+        position: relative;
+    }
+
+    .bannerRight .code{
+        top: 40px;
+        left: 20px;
+        width: 160px;
+    }
+
+    .bannerRight .manWrapper {
+        left: 40%;
+        transform: translateX(-50%);
+        width: 300px;
+        top: 80px;
+    }
+
+    .bannerRight .loadingPg {
+        bottom: -135px;
+        right: 10px;
+        width: 200px;
+        height: 120px;
+        border-radius: 8px;
+    }
+
+    .bannerRight .loadingPg .div1 {
+        width: 100px;
+        height: 8px;
+    }
+
+    .bannerRight .loadingPg .div2 {
+        width: 180px;
+        height: 8px;
+    }
+
+    .bannerRight .loadingPg .div3 {
+        width: 110px;
+        height: 8px;
+    }
+
+    #expertise .heading h5 {
+        font-size: 12px;
+    }
+
+    #expertise .heading h1 {
+        font-size: 39px;
+    }
+
+    #expertise .heading p {
+        font-size: 14px;
+    }
+}
