@@ -1,273 +1,235 @@
-@media (min-width: 320px) and (max-width: 350px) {
-    header {
-        border-radius: 25px;
-    }
-    header nav a img {
-        width: 70px;
-    }
+/* ================= MOBILE (≤576px) ================= */
+@media (max-width: 576px) {
 
-    header nav h2 {
-        font-size: 11px;
-    }
-
-    header nav p {
-        font-size: 8px;
-        letter-spacing: 3px;
-    }
-
+    /* Banner */
     #banner {
-        height: 1300px;
+        padding: 120px 0 60px;
+        height: auto;
     }
 
-    #banner .bannerLeft {
-        margin-top: 130px;
+    .bannerLeft {
+        text-align: center;
+    }
+
+    .bannerLeft h1 {
+        font-size: 40px;
     }
 
     .bannerLeft h5 {
-        margin-bottom: 20px;
         font-size: 12px;
         padding: 8px 14px;
     }
 
-    .bannerLeft h1 {
-        font-size: 44px;
-        margin-bottom: 10px;
-    }
-
     .bannerLeft h6 {
+        justify-content: center;
         font-size: 14px;
     }
 
     .bannerLeft p {
-        font-size: 16px;
-        margin-bottom: 20px;
+        font-size: 15px;
     }
 
     .bannerLeft .bannerBtn {
-        display: block;
-    }
-
-    .bannerLeft .btn_primary {
-        margin-bottom: 16px;
-    }
-
-    .bannerLeft .amolnama h3 {
-        font-size: 24px;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .bannerLeft .amolnama {
-        justify-content: space-between;
+        justify-content: space-around;
         text-align: center;
     }
 
-    .bannerLeft .amolnama p {
-        font-size: 14px;
-    }
-
-    .bannerRight{
-        flex-direction: column;
-        height: auto;
-    }
-
-    .bannerRight .code {
-        top: 80px;
-        left: 20px;
-        width: 140px;
+    /* Banner Right */
+    .bannerRight {
+        margin-top: 40px;
+        position: relative;
     }
 
     .bannerRight .manWrapper {
-        position: relative;
-        left: 49%;
-        transform: translateX(-60%);
         width: 260px;
-        top: 120px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
-    .bannerRight .loadingPg{
-        position: relative;
-        top: 58px;
-        right: -67px;
+    .bannerRight .code {
+        width: 140px;
+        top: 40px;
+        left: 10px;
+    }
+
+    .bannerRight .loadingPg {
         width: 180px;
-        height: 110px;
-        border-radius: 10px;
+        height: 100px;
+        right: 0;
+        bottom: -80px;
     }
 
-    .bannerRight .loadingPg .div1{
-        width: 70px;
-        height: 8px;
-    }
-
-    .bannerRight .loadingPg .div2{
-        width: 160px;
-        height: 8px;
-    }
-
-    .bannerRight .loadingPg .div3{
-        width: 100px;
-        height: 8px;
-    }
-
+    /* About */
     #about {
-        height: 1100px;
+        padding: 80px 0;
+        height: auto;
+    }
+
+    .aboutLeft {
+        text-align: center;
     }
 
     .aboutLeft h1 {
-        font-size: 39px;
+        font-size: 30px;
     }
 
     .aboutLeft p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .aboutRight {
-        margin-top: 100px;
+        margin-top: 40px;
     }
 
-    .aboutRight .toppings .topppu {
-        border-radius: 20px;
-        padding: 20px;
-        width: 150px;
+    .aboutRight .toppings {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .aboutRight .toppings .topppu iconify-icon {
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
+    .aboutRight .topppu {
+        width: 100%;
     }
 
-    .aboutRight .toppings .topppu h3 {
-        font-size: 20px;
-    }
-
-    
-    .aboutRight .toppings .topppu p {
-        font-size: 12px;
-    }
-
-    #expertise .heading h5 {
-        font-size: 10px;
+    /* Expertise */
+    #expertise {
+        padding: 60px 0;
     }
 
     #expertise .heading h1 {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     #expertise .heading p {
-        font-size: 12px;
+        font-size: 14px;
+    }
+
+    .skillCard {
+        flex-direction: column;
+        text-align: center;
+        height: 350px;
+    }
+
+    .skillCard .cardData {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    /* Projects */
+    #projects {
+        padding: 80px 0;
+    }
+
+    #projects h1 {
+        font-size: 30px;
+    }
+
+    .projectCard h3 {
+        font-size: 18px;
+    }
+
+    .projectCard p {
+        font-size: 14px;
+    }
+
+    /* Contact */
+    #contact {
+        padding: 80px 0;
+    }
+
+    #contact h1 {
+        font-size: 28px;
+    }
+
+    /* Footer */
+    #footer {
+        padding: 40px 0;
+        text-align: center;
     }
 }
 
-@media (min-width: 351px) and (max-width: 390px) {
-    .mblHdr .navLeft .navIcon h3 {
-        font-size: 14px;
-        letter-spacing: 3px;
-    }
 
-    .mblHdr .navLeft .navIcon p {
-        font-size: 7px;
-        letter-spacing: 4px;
-    }
+/* ================= TABLET (577px - 768px) ================= */
+@media (min-width: 577px) and (max-width: 768px) {
 
     #banner {
-        height: 1300px;
-    }
-
-    #banner .bannerLeft {
-        margin-top: 120px;
-    }
-    
-    .bannerLeft h5 {
-        font-size: 13px;
-        margin-bottom: 20px;
-        padding: 10px 12px;
+        padding: 120px 0;
+        height: auto;
     }
 
     .bannerLeft h1 {
         font-size: 48px;
-        margin-bottom: 10px;
-    }
-
-    .bannerLeft h6 {
-        font-size: 16px;
     }
 
     .bannerLeft p {
         font-size: 16px;
-        margin-bottom: 20px;
     }
 
-    .bannerLeft .bannerBtn {
-        display: block;
-    }
-
-    .bannerLeft .btn_primary {
-        margin-bottom: 16px;
-    }
-
-    .bannerLeft .amolnama h3 {
-        font-size: 24px;
-    }
-
-    .bannerLeft .amolnama {
-        justify-content: space-between;
-        text-align: center;
-    }
-
-    .bannerLeft .amolnama p {
-        font-size: 14px;
-    }
-
-    .bannerRight{
-        flex-direction: column;
-        height: auto;
-        position: relative;
-    }
-
-    .bannerRight .code{
-        top: 40px;
-        left: 20px;
-        width: 160px;
+    .bannerRight {
+        margin-top: 50px;
     }
 
     .bannerRight .manWrapper {
-        left: 40%;
+        width: 320px;
+        left: 50%;
         transform: translateX(-50%);
-        width: 300px;
-        top: 80px;
+    }
+
+    .bannerRight .code {
+        width: 160px;
     }
 
     .bannerRight .loadingPg {
-        bottom: -135px;
-        right: 10px;
-        width: 200px;
+        width: 220px;
         height: 120px;
-        border-radius: 8px;
     }
 
-    .bannerRight .loadingPg .div1 {
-        width: 100px;
-        height: 8px;
+    /* About */
+    #about {
+        padding: 100px 0;
     }
 
-    .bannerRight .loadingPg .div2 {
-        width: 180px;
-        height: 8px;
+    .aboutLeft h1 {
+        font-size: 34px;
     }
 
-    .bannerRight .loadingPg .div3 {
-        width: 110px;
-        height: 8px;
+    .aboutRight {
+        margin-top: 50px;
     }
 
-    #expertise .heading h5 {
-        font-size: 12px;
-    }
-
+    /* Expertise */
     #expertise .heading h1 {
-        font-size: 39px;
+        font-size: 40px;
     }
 
-    #expertise .heading p {
-        font-size: 14px;
+    /* Projects */
+    #projects h1 {
+        font-size: 36px;
+    }
+
+}
+
+
+/* ================= SMALL LAPTOP (769px - 992px) ================= */
+@media (min-width: 769px) and (max-width: 992px) {
+
+    .bannerLeft h1 {
+        font-size: 56px;
+    }
+
+    .bannerRight .manWrapper {
+        width: 350px;
+    }
+
+    .aboutRight {
+        margin-top: 80px;
+    }
+
+    .skillCard .cardData h2 {
+        font-size: 26px;
     }
 }

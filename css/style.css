@@ -579,8 +579,9 @@ header nav ul li button:hover iconify-icon {
 /*                                About Section                               */
 #about {
     background: linear-gradient(90deg,#1a0b14 0%,#2a0f1c 50%,#14060d 100%);
-    height: 800px;
+    padding: 100px 0; 
     scroll-margin-top: 80px;
+
 }
 
 .aboutLeft h6 {
@@ -619,7 +620,6 @@ header nav ul li button:hover iconify-icon {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 200px;
 }
 
 .aboutRight .toppings {
@@ -685,21 +685,22 @@ header nav ul li button:hover iconify-icon {
 /* -------------------------------------------------------------------------- */
 /*                              Expertise section                             */
 #expertise {
-    margin: 100px 0;
-    scroll-margin-top: 100px;
+   background: linear-gradient(90deg,#2a0f1c 0%,#3a1525 50%,#1a0b14 100%);
+    padding: 30px 0 60px 0; 
 }
 
 #expertise .heading h5 {
-  color: #0099cc;
-  font-size: 14px;
+  color:#eb2f06;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 10px;
   text-transform: uppercase;
+  margin-top: 50px;
   margin-bottom: 12px;
 }
 
 #expertise .heading h1 {
-  color: #1a1a1a;
+  color: #ff0066e5;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.1;
@@ -708,7 +709,7 @@ header nav ul li button:hover iconify-icon {
 }
 
 #expertise .heading p {
-  color: #555555; 
+  color:  #ff0066e5;
   font-size: 20px;
   line-height: 1.6;
   font-weight: 400;
@@ -716,6 +717,8 @@ header nav ul li button:hover iconify-icon {
 }
 
 .skillCard {
+    background-color: #fff;
+    height: 250px;
     border: 1px solid #c7c7c7;
     border-radius: 16px;
     padding: 32px;
@@ -777,3 +780,134 @@ header nav ul li button:hover iconify-icon {
     color: #333;
 }
 /* -------------------------------------------------------------------------- */
+
+/* ============== My Work Start ===================== */
+/* Projects Section */
+#projects {
+    padding: 100px 0;
+    background: linear-gradient(90deg,#1a0b14 0%,#2a0f1c 50%,#14060d 100%);
+    color: #FF8A00;
+    scroll-margin-top: 100px; /* Navbar height er jonno */
+}
+#projects .heading h5{
+    color: #fff;
+}
+#projects .heading p{
+    margin-bottom: 40px;
+}
+
+/* Project Card */
+.projectCard {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+
+.projectCard img {
+    border-radius: 12px;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+     object-position: top;
+}
+
+/* Card hover effect */
+.projectCard:hover {
+    transform: translateY(-10px);
+}
+
+/* Row gap */
+#projects .row.g-4 {
+    gap: 2rem;
+}
+
+/* Project Card Text Gradient */
+.projectCard h3,
+.projectCard p {
+    background: linear-gradient(90deg, #FF4D8D, #FF8A00);
+    -webkit-background-clip: text;
+    
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.projectCard p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#footer {
+    padding: 40px 0;
+    background: #000;
+    color: #aaa;
+}
+/* ================= My Work End =================== */
+
+/* ============== Contact start ================== */
+#contact {
+    padding: 100px 0;
+    background: linear-gradient(90deg,#2a0f1c 0%,#3a1525 50%,#1a0b14 100%);
+    color: #fff;
+}
+
+#contact h1 {
+    background: linear-gradient(90deg, #FF4D8D, #FF8A00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.socialLinks {
+    margin-top: 20px;
+}
+
+.socialLinks a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #FF4D8D;
+    transition: .3s;
+}
+
+.socialLinks a:hover {
+    color: #FF8A00;
+}
+/* =============== contact end ==================== */
+
+/* ================ footer start =============== */
+#footer {
+    padding: 60px 0;
+    background: linear-gradient(90deg,#2a0f1c 0%,#3a1525 50%,#1a0b14 100%);
+    color: #aaa;
+}
+.footerLogo img {
+    width: 80px;   /* size control */
+    margin-bottom: 10px;
+}
+/* ================ footere end =================== */
+
+/*===================== javascript====================== */
+.projectCard,
+.skillCard {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.5s;
+}
+
+.projectCard.show,
+.skillCard.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.bannerLeft h1 span::after {
+    content: "|";
+    margin-left: 5px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
